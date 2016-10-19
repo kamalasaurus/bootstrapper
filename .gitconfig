@@ -1,0 +1,11 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Kamal Radharamanan
+  email = kamalasaurus@gmail.com
+
+[color]
+  ui = true
+
+[format]
+  pretty = %C(magenta)%h%Creset %Cgreen[%cr]%Creset (%an) %s
+
