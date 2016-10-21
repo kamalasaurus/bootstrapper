@@ -19,7 +19,7 @@ dependencies = [
   "brew cask install macvim", #macvim
   "curl -L https://bit.ly/janus-bootstrap | bash", #janus
   "git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim", #vundle
-  "echo \"\n alias vim='/usr/local/bin/mvim -v' \n alias vi='/usr/local/bin/mvim -v' \n\" >> ~/.zshrc", #vim shell aliases
+  "echo \"\nalias vim='/usr/local/bin/mvim -v'\nalias vi='/usr/local/bin/mvim -v'\n\" >> ~/.zshrc", #vim shell aliases
   "curl -sSf https://static.rust-lang.org/rustup.sh | sh", #rust
   "wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash", #nvm
   "brew install jenv", #jenv
@@ -31,7 +31,9 @@ dependencies = [
   "brew cask install slack", #slack
   "brew cask install firefox", #firefox
   "brew cask install anaconda", #anaconda
-  "echo \"\n export PATH=~/anaconda3/bin:$PATH\n\"", #add anaconda path
+  "echo \"\nexport PATH=~/anaconda3/bin:~/.rbenv/bin:$PATH\n\"", #add anaconda and rbenv path
+  "brew install mysql", #mysql
+  "echo \"\neval \"$(rbenv init -)\"\neval \"$(jenv init -)\"\" >> ~/.zshrc", #initialize rbenv and jenv
   "sh -c \"$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)\"", #oh-my-zsh
 ]
 
